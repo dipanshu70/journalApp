@@ -18,21 +18,21 @@ import static org.mockito.Mockito.*;
 
 public class UserDetailsServiceimplTests {
 
-//    @InjectMocks
-//    UserDetailsServiceimpl userDetailsService;
-//
-//    @Mock
-//    private UserRepository userRepository;
-//
-//    @BeforeEach
-//    void setUp(){
-//        MockitoAnnotations.initMocks(this);
-//    }
-//
-//    @Test
-//    void loadUserByUsernameTest(){
-//        when(userRepository.findByusername((ArgumentMatchers.anyString()))).thenReturn(User.builder().username("ram").password("123").roles(new ArrayList<>()).build());
-//        UserDetails user = userDetailsService.loadUserByUsername("ram");
-//        Assertions.assertNotNull(user);
-//    }
+    @InjectMocks
+    UserDetailsServiceimpl userDetailsService;
+
+    @Mock
+    private UserRepository userRepository;
+
+    @BeforeEach
+    void setUp(){
+        MockitoAnnotations.initMocks(this);
+    }
+
+    @Test
+    void loadUserByUsernameTest(){
+        when(userRepository.findByusername((ArgumentMatchers.anyString()))).thenReturn(User.builder().username("ram").password("123").roles(new ArrayList<>()).build());
+        UserDetails user = userDetailsService.loadUserByUsername("ram");
+        Assertions.assertNotNull(user);
+    }
 }
