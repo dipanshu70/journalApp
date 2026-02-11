@@ -1,8 +1,6 @@
 package net.engineeringdigest.journalApp.entity;
 
-import lombok.Builder;
-import lombok.Data;
-import lombok.NonNull;
+import lombok.*;
 import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.index.Indexed;
@@ -16,12 +14,16 @@ import java.util.List;
 @Document(collection = "users")
 @Data   // This is a feature of Lombok which auto generates the getter and setters during compile time
 @Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class User {
     @Id
     private ObjectId id;
     @Indexed(unique = true)                           // This means there cannot be two users with same username
     @NonNull
     private String username;
+    private String email;
+    private boolean sentimentAnalysis;
     @NonNull
     private String password;
     @DBRef
