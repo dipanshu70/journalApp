@@ -49,8 +49,9 @@ Clone the repo: git clone https://github.com/dipanshu70/journalApp
 Setup Environment: Add your MongoDB URI, Redis credentials, and Google Client IDs to application-dev.yml.
 
 Build & Run: ```bash mvn clean install mvn spring-boot:run
+## 📸 Screenshots
 
-API Documentation :-
-"D:\java\intellij_java\springboot\Journal-App-master\images\Screenshot 2026-05-26 213750.png"
-"D:\java\intellij_java\springboot\Journal-App-master\images\Screenshot 2026-05-26 213742.png"
-"D:\java\intellij_java\springboot\Journal-App-master\images\Screenshot 2026-05-26 213715.png"
+### Swagger UI
+![Swagger UI](images/Screenshot%202026-05-26%20213750.png)
+(images/Screenshot%202026-05-26%20213742.png)
+(images/Screenshot%202026-05-26%20213715.png)
