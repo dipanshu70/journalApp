@@ -51,7 +51,9 @@ Setup Environment: Add your MongoDB URI, Redis credentials, and Google Client ID
 Build & Run: ```bash mvn clean install mvn spring-boot:run
 ## 📸 Screenshots
 
+## 📸 Screenshots
+
 ### Swagger UI
-![Swagger UI](images/Screenshot%202026-05-26%20213750.png)
-(images/Screenshot%202026-05-26%20213742.png)
-(images/Screenshot%202026-05-26%20213715.png)
+![Swagger UI 1](images/Screenshot%202026-05-26%20213750.png)
+![Swagger UI 2](images/Screenshot%202026-05-26%20213742.png)
+![Swagger UI 3](images/Screenshot%202026-05-26%20213715.png)
